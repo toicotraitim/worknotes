@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Alata', sans-serif;
+    font-size: 12px;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+    border-radius: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+.container {
+    width: 400px;
+    height: 500px;
+    overflow-y: auto;
+    position: relative;
+    background: #fffafa;
+    
+}
+.title {
+    background: #21bf73;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #fff;
+    position: relative;
+    z-index: 9999;
+}
+.content {
+    background: #f6f5f5;
+    margin-bottom: 40px;
+}
+.note {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+}
+.note > * {
+    margin: 5px;
+}
+.note .time {
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px;
+}
+.note .text {
+    width: 100%;
+    text-align: justify;
+}
+.note .del {
+    background: #fcbf1e;
+    border: 1px solid #fcbf1e;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    transition: .3s linear;
+}
+.note .del:hover {
+    background: #0779e4;
+    border: 1px solid #0779e4;
+    color: #fff;
+
+}
+.btn {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background:#fff;
+    box-shadow: 0px 0px 10px #a6dcef;
+    transition: .3s linear;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.addNote {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.btn span {
+    background: #2d4059;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    height: 40px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+}
+
+.btn input, .btn button,.btn textarea {
+    display: none;
+}
+
+.btn:hover {
+    height: 200px;
+}
+.btn:hover span {
+    //display: none;
+}
+.btn:hover button,.btn:hover input,.btn:hover textarea {
+    display: block;
+}
+.btn:hover textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border: 2px solid #f6ab6c;
+    outline: none;
+    padding: 10px;
+    background: #f6efa6;
+}
+.btn:hover input {
+    border: 1.5px solid #000;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+}
+.btn:hover button {
+    background: #c72c41;
+    padding: 5px 10px;
+    border: 1.5px solid #c72c41;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s linear;
+
+}
+.btn:hover button:hover {
+    background: #cdb30c;
+    border: 1.5px solid #cdb30c;
+}
